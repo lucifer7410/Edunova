@@ -1,0 +1,25 @@
+{
+  "name": "edunova-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:digest": "node digest-agent/index.js",
+    "start:deadline": "node deadline-agent/index.js",
+    "start:notifier": "node notifier-agent/index.js",
+    "start:enricher": "node enricher-agent/index.js",
+    "start:motivator": "node motivator-agent/index.js",
+    "demo": "npm-run-all --parallel start:*"
+  },
+  "dependencies": {
+    "axios": "^1.0.0",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "jsonwebtoken": "^9.0.0",
+    "sqlite3": "^5.1.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
+
